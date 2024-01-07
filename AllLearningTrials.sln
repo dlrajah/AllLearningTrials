@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreTrial-CodeFirst", "EFCoreTrial-CodeFirst\EFCoreTrial-CodeFirst.csproj", "{47B982D8-C41E-4DC0-9B0D-32E2D78AF270}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EFCoreTrials", "EFCoreTrials", "{C0B354C5-A614-4425-9892-7940BA6928E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeFirst", "CodeFirst", "{4B5F5922-F5E8-4CAE-88AA-87C514A599E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstWebUI", "CodeFirstWebUI\CodeFirstWebUI.csproj", "{F9EA264C-2EBF-4A91-B1CD-0482D1869E22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B982D8-C41E-4DC0-9B0D-32E2D78AF270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B982D8-C41E-4DC0-9B0D-32E2D78AF270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B982D8-C41E-4DC0-9B0D-32E2D78AF270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B982D8-C41E-4DC0-9B0D-32E2D78AF270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9EA264C-2EBF-4A91-B1CD-0482D1869E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9EA264C-2EBF-4A91-B1CD-0482D1869E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9EA264C-2EBF-4A91-B1CD-0482D1869E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9EA264C-2EBF-4A91-B1CD-0482D1869E22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47B982D8-C41E-4DC0-9B0D-32E2D78AF270} = {4B5F5922-F5E8-4CAE-88AA-87C514A599E0}
+		{4B5F5922-F5E8-4CAE-88AA-87C514A599E0} = {C0B354C5-A614-4425-9892-7940BA6928E1}
+		{F9EA264C-2EBF-4A91-B1CD-0482D1869E22} = {4B5F5922-F5E8-4CAE-88AA-87C514A599E0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CBC3BCA-BE29-47FA-BA2C-CE9888B8D58A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,78 @@
+﻿@page
+@model CodeFirstWebUI.Pages.Animals.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].Sex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].Dob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].EyeColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].HairColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Animal[0].Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Animal) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EyeColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HairColor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
