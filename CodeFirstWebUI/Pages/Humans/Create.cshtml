@@ -1,0 +1,69 @@
+﻿@page
+@model CodeFirstWebUI.Pages.Humans.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Human</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Human.Name" class="control-label"></label>
+                <input asp-for="Human.Name" class="form-control" />
+                <span asp-validation-for="Human.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.Sex" class="control-label"></label>
+                <input asp-for="Human.Sex" class="form-control" />
+                <span asp-validation-for="Human.Sex" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.Dob" class="control-label"></label>
+                <input asp-for="Human.Dob" class="form-control" />
+                <span asp-validation-for="Human.Dob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.Height" class="control-label"></label>
+                <input asp-for="Human.Height" class="form-control" />
+                <span asp-validation-for="Human.Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.Weight" class="control-label"></label>
+                <input asp-for="Human.Weight" class="form-control" />
+                <span asp-validation-for="Human.Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.Complexion" class="control-label"></label>
+                <input asp-for="Human.Complexion" class="form-control" />
+                <span asp-validation-for="Human.Complexion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.EyeColor" class="control-label"></label>
+                <input asp-for="Human.EyeColor" class="form-control" />
+                <span asp-validation-for="Human.EyeColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Human.HairColor" class="control-label"></label>
+                <input asp-for="Human.HairColor" class="form-control" />
+                <span asp-validation-for="Human.HairColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
